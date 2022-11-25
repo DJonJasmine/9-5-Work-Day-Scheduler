@@ -45,6 +45,5 @@ $(document).ready(function() {
     $(`#${hour} .description`).val(localStorage.getItem(`${hour}`));
   })
 
-  dayTracker();
 }
 })
