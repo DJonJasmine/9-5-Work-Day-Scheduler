@@ -6,8 +6,10 @@
 This is a 9-5 work day scheduler used to organize you work day. You are able to save your inputs along with visual representation of past present and future time slots
 
 ## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+ <img alt="GitHub" src="https://img.shields.io/github/license/DJonJasmine/9-5-Work-Day-Scheduler">
 
+ <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/DJonJasmine/9-5-Work-Day-Scheduler">
+ 
 ## Visuals
 
 ![Gif of work day scheduler page](assets/05-third-party-apis-homework-demo.gif)
