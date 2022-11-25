@@ -25,8 +25,8 @@ $(document).ready(function() {
 
       // To check the time and add the classes for background indicators
     if (timeBlock < currentHour) {
-      $(this).removeClass('future');
       $(this).removeClass('present');
+      $(this).removeClass('future');
       $(this).addClass('past');
           
     } else if (timeBlock === currentHour) {
@@ -34,8 +34,8 @@ $(document).ready(function() {
       $(this).removeClass('future');
       $(this).addClass('present');
     } else {
-      $(this).removeClass('present');
       $(this).removeClass('past');
+      $(this).removeClass('present');
       $(this).addClass('future');
     }
   })
