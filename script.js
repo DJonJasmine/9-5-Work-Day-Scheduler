@@ -1,8 +1,10 @@
 // current date
 let today = moment();
 $("#currentDay").text(today.format("dddd, MMMM Do YYYY"));
+
 // array for time blocks
-let timeSlot = ["9AM", "10AM", "11AM", "12PM", "1PM", "2PM", "3PM", "4PM", "5PM"];
+let timeSlot = ["9", "10", "11", "12", "13", "14", "15", "16", "17"];
+
 
 $(document).ready(function() {
   $('.saveBtn').on('click', function() {
@@ -17,8 +19,8 @@ $(document).ready(function() {
   // a function for the past present and future time blocks
 
   // pass the key with get item
-  timeSlot.forEach(hour => {
-    $(`#${hour} .description`).val(localStorage.getItem(`${hour}`));
+  timeSlot.forEach(hourNumber => {
+    $(`#hour-${hourNumber} .description`).val(localStorage.getItem(`hour-${hourNumber}`));
   })
 
 })
@@ -27,7 +29,8 @@ function hourTracker() {
   let currentHour = moment().hour();
   
   $('.time-block').each(function () {
-    let timeBlock = parseInt($(this).attr('id').split('hour')[1]);
+    let timeBlock = parseInt($(this).attr('id').split('hour-')[1]);
+
 
     // To check the time and add the classes for background indicators
   if (timeBlock < currentHour) {
@@ -44,6 +47,9 @@ function hourTracker() {
     $(this).removeClass('present');
     $(this).addClass('future');
   }
+
+  // console.log(timeBlock, currentHour);
+  console.log(typeof currentHour, typeof timeBlock);
  })
 }
 hourTracker()
