@@ -12,7 +12,7 @@ This is a 9-5 work day scheduler used to organize you work day. You are able to 
  
 ## Visuals
 
-[Screenshot of 9-5 work day scheduler](assets/images)
+[Screenshot of 9-5 work day scheduler](./assets/images/Work-Day-Scheduler-SS.png)
 
 ## Usage
 
